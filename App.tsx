@@ -50,9 +50,10 @@ const App: React.FC = () => {
   };
 
   const moveNoButton = () => {
-    // Usando un rango más amplio para asegurar movimientos "largos" por toda la pantalla
-    const x = Math.random() * 80 + 10; 
-    const y = Math.random() * 80 + 10;
+    // Asegurando movimientos "largos" saltando a cuadrantes opuestos o alejados
+    // Usamos rangos amplios (5% a 90%) para cubrir toda la pantalla
+    const x = Math.random() * 85 + 5; 
+    const y = Math.random() * 85 + 5;
     setNoButtonPos({ top: `${y}%`, left: `${x}%` });
   };
 
@@ -71,8 +72,7 @@ const App: React.FC = () => {
               <Heart className="w-12 h-12 text-rose-500" fill="#f43f5e" />
             </div>
             
-            {/* Se aumentó el margen superior (mt-12) para que el texto no quede pegado al icono */}
-            <h1 className="text-3xl md:text-6xl font-elegant font-black text-rose-950 mt-12 mb-12 animate-reveal-up delay-100 uppercase tracking-tight leading-tight">
+            <h1 className="text-3xl md:text-6xl font-elegant font-black text-rose-950 mt-16 mb-12 animate-reveal-up delay-100 uppercase tracking-tight leading-tight">
               HOLA MI NIÑA HERMOSA: <br/>
               <span className="text-rose-600 block mt-4 text-2xl md:text-4xl normal-case">HICE ESTE DETALLE PARA TI CON MUCHO AMOR💕</span>
             </h1>
@@ -81,7 +81,6 @@ const App: React.FC = () => {
               <p>Quería decirte primeramente que te amo mucho y que eres la niña de mi corazón, lo que siento por ti no lo cambio por nada en el mundo.</p>
               <p>Sé que han pasado muchas cosas y sé que tal vez ahora te sientes un poco diferente, pero no quiero que dudes nunca de cuánto te amo mi dormilona.</p>
               <p>Tal vez no podamos pasar juntos como quisiéramos, pero el hecho de saber que en un día tan especial como el 14 de febrero te tendré conmigo me hace el hombre más feliz del mundo, así no te tenga de frente.</p>
-              <p>Y si tú me lo permites quiero invitarte a que seas mi san Valentín, así estemos a la distancia quiero pasar el día hablando contigo o hacer una llamadita en la noche, así sean 5 minutos permíteme pasarlo contigo.</p>
             </div>
 
             <div className="flex justify-center mt-16 animate-reveal-up delay-300">
@@ -110,7 +109,7 @@ const App: React.FC = () => {
                 <img src="https://i.imgur.com/8mKFLhL.jpeg" className="w-full h-auto object-cover rounded-[1.5rem]" />
               </div>
               <div className="space-y-12 text-center max-w-3xl font-body text-lg md:text-xl text-rose-900 px-8 leading-relaxed font-semibold">
-                <p>"A dia de hoy sigo aquí corazoncita, esforzándome por ti y por este gran amor que te tengo ❤️. Porque nunca mentí con todo lo que te dije, ni mucho menos con lo que siento por ti, nunca mentí con quererte en mi vida y esforzarme muchisimo por ti..."</p>
+                <p>"A dia de hoy sigo aquí corazoncito, esforzándome por ti y por este gran amor que te tengo ❤️. Porque nunca mentí con todo lo que te dije, ni mucho menos con lo que siento por ti, nunca mentí con quererte en mi vida y esforzarme muchisimo por ti..."</p>
                 <p className="font-bold text-rose-950 text-2xl md:text-4xl leading-tight">"...nunca te mentí cuando te prometí que nada malo volvería a pasar, porque todo lo que te digo es sincero y real y siempre te lo he demostrado mi amor."</p>
               </div>
             </div>
@@ -154,17 +153,6 @@ const App: React.FC = () => {
                     "Pero valió la pena volver a ir y verte esos ojitos tan hermosos que tienes mi niña, aún recuerdo cuando te vi venir hacia mi, en esos momentos sentía que mi corazón se iba a salir, por fin estaba viendo a la niña que más amaba en este mundo, por fin te estaba viendo a ti 🥺."
                   </p>
                 </div>
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center gap-16">
-              <div className="image-card-premium w-full max-w-2xl">
-                <img src="https://i.imgur.com/bD6h4Ut.jpeg" className="w-full h-auto object-cover rounded-[1.5rem]" />
-              </div>
-              <div className="text-center max-w-3xl px-8">
-                <p className="text-xl md:text-3xl font-elegant text-rose-950 leading-relaxed font-medium">
-                  Porque para mi el proceso de conocerte ha sido lo mejor que me ha pasado en la vida, me importa saber que te molesta, que te gusta o disgusta, cuales son tus cosas favoritas o lugares favoritos, porque para mi no eres ningún pasatiempo o momento, eres el amor de mi vida y la niña con la que quisiera estar por el resto de mi vida, y quiero dia a dia seguir escuchándote más y entendiéndote, porque te amo 💕
-                </p>
               </div>
             </div>
 
@@ -267,7 +255,7 @@ const App: React.FC = () => {
                   
                   <p>Me siento feliz de haber conocido a esa niña tan especial y encantadora, tan dulce y tan brillante, tan hermosa y tan perfecta ✨.</p>
                   
-                  <p>Quiero quedarme toda la vida junto a ti mi amor, y cada día poder decirte lo mucho que te amo. Somos el uno para el otro y estoy seguro que estaremos juntos por el resto de la vida, porque nuestro amor es muy grande mi niña, eres la niña con el corazón más grande y valiente, por eso nuestra amor nunca acabará, por eso seremos tú y yo, por siempre y para siempre mi vida. Hasta que la muerte nos separe 💕</p>
+                  <p>Quiero quedarme toda la vida junto a ti mi amor, y cada día poder decirte lo mucho que te amo. Somos el uno para el otro y estoy seguro que estaremos juntos por el resto de la vida, porque nuestro amor es muy grande mi niña, eres la niña con el corazón más grande y valiente, por eso nuestro amor nunca acabará, por eso seremos tú y yo, por siempre y para siempre mi vida. Hasta que la muerte nos separe 💕</p>
                 </div>
               </div>
             </div>
@@ -299,7 +287,7 @@ const App: React.FC = () => {
                   position: noButtonPos.top === 'auto' ? 'relative' : 'absolute', 
                   top: noButtonPos.top, 
                   left: noButtonPos.left,
-                  transition: 'all 0.25s cubic-bezier(0.34, 1.56, 0.64, 1)'
+                  transition: 'all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1)'
                 }} 
                 className="px-10 py-4 bg-white text-rose-600 border-2 border-rose-200 rounded-full font-semibold text-lg hover:bg-rose-50 shadow-sm whitespace-nowrap"
               >
